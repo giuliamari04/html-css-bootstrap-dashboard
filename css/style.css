@@ -1,0 +1,79 @@
+
+:root{
+    --mycolor-bg-gray:rgb(247, 247, 247);
+    --mycolor-bg-light-blue:rgb(27, 114, 232);
+    --mycolor-bg-dark-blue:rgb(20, 42, 64);
+    --mycolor-bg-search-bar: #e5e5e5;
+    --mycolor-bg-body: #f8f9fa;
+
+   
+}
+.debug{
+    border: 2px solid red;
+}
+
+.my-bg-searchbar{
+    background-color: var(--mycolor-bg-search-bar);
+}
+
+.my-bg-light-blue{
+    background-color: var(--mycolor-bg-light-blue);
+}
+
+.my-bg-dark-blue{
+    background-color: var(--mycolor-bg-dark-blue);
+}
+
+.my-bg-grey{
+    background-color: var(--mycolor-bg-gray);
+}
+
+.my-color-bell{
+    color: orange;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: red;
+}
+
+
+main{
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;    
+}
+
+#sidebar{
+    width: 150px;
+    height: 100%;
+    background-image: url(../img/sidebar-bg.png);
+}
+
+#main-content{
+    width: calc(100% - 150px);
+    overflow-y: auto; 
+}
+.my-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+
+}
+.dash-left{
+
+}
+
+.dash-right{
+    
+}
