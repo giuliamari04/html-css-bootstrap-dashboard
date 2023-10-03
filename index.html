@@ -19,7 +19,7 @@
 <body>
     <div class="wrapper">
         <header class=" my-bg-grey sticky-top container-fluid ">
-            <div class="row">
+            <div class="row d-flex justify-content-between">
                 <div class="col-2 py-3">
                     <img src="img/logo.svg" alt="logo">
                 </div>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-                <div class="col-2 py-4 justify-content-end">
+                <div class="col-2 py-4">
                     <a href="#" class="px-3 text-black "><i class="fa-solid fa-list-ul"></i></a>
                     <a href="#" class="px-3 text-black"><i class="fa-solid fa-circle-question"></i></a>
                     <a href="#" class="px-3 text-black"><i class="fa-solid fa-ellipsis-vertical"></i></a>
@@ -47,7 +47,7 @@
 
             </div>
 
-            <div id="main-content">
+            <div id="main-content" >
 
                 <section id="main-nav" class="container-fluid my-bg-light-blue text-light">
                     <div class="row">
@@ -57,10 +57,10 @@
                     </div>
                 </section>
 
-                <div class="container-fluid">
+                <div class="container-fluid p-3">
                     <section id="dashboard" class="row">
                         <div class="col-sm-12 col-lg-8 col-md-6 dash-left ">
-                            <div class="card">
+                            <div class="card mb-2">
                                 <div class="card-header">
                                     <h2>Prossime classi</h2>
                                 </div>
@@ -77,11 +77,11 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">
+                                            <th scope="row" >
                                                 <img src="img/class-avatar.jpg" alt="logetto" class="my-icon">
                                                 <span> classe 75</span>
                                             </th>
-                                            <td >15 Feb 2021</td>
+                                            <td>15 Feb 2021</td>
                                             <td>20%</td>
                                             <td>
                                                 <button type="button" class="btn btn-success rounded-3 p-2 py-0">Done</button>
@@ -208,11 +208,57 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="card">2</div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2 class="text-uppercase">f.a.q.</h2>
+                                </div>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">come aggiungere nuovo studente? <span><i class="fa-solid fa-chevron-down "></i></span></a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">A third link item  <span><i class="fa-solid fa-chevron-down "></i></span></a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">A fourth link item  <span><i class="fa-solid fa-chevron-down "></i></span></a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">A disabled link item  <span><i class="fa-solid fa-chevron-down "></i></span></a>
+                                  </div>
+
+                            </div>
                         </div>
-                        <div class="cool-sm-12 col-lg-4 col-md-6 dash-right border">
-                            <div class="card">1</div>
-                            <div class="card">2</div>
+                        <div class="cool-sm-12 col-lg-4 col-md-6 dash-right ">
+                            <div class="card mb-2">
+                                 <div class="card-header">
+                                    <h2>Todo</h2>
+                                </div>
+                                <ul class="list-group p-3">
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                      <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                      <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                      <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                                    </li>
+                                  </ul>
+                            </div>
+                            <div class="card p-3">
+                                <div class="card ">
+                                    <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">An item</li>
+                                      <li class="list-group-item">A second item</li>
+                                      <li class="list-group-item">A third item</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Card link</a>
+                                      <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                  </div>
+                            </div>
                         </div>
                     </section>
                 </div>
