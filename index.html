@@ -22,38 +22,40 @@
     -------------------------------------------------------------- -->
     <div class="wrapper">
 
+
+
         <!-- ---------------------------------------------------------
                                 header
     -------------------------------------------------------------- -->
         <header class=" my-bg-grey sticky-top  d-flex align-items-center ">
             <nav class="container-fluid">
-            <div class="row d-flex justify-content-between">
-                <div class="col-auto py-3">
-                    <img src="img/logo.svg" alt="logo" class="logo d-block">
-                    <img src="img/mobile-logo.png" alt="logo-mobile" class="logo-mobile d-none">
-                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-auto py-3">
+                        <img src="img/logo.svg" alt="logo" class="logo d-block">
+                        <img src="img/mobile-logo.png" alt="logo-mobile" class="logo-mobile d-none">
+                    </div>
 
 
-                <div class="col py-3">
-                    <div class="input-group flex-nowrap ">
-                        <span class="input-group-text my-bg-searchbar" id="addon-wrapping"><i
-                                class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" class="form-control my-bg-searchbar"
-                            placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
-                            aria-describedby="addon-wrapping">
+                    <div class="col py-3">
+                        <div class="input-group flex-nowrap ">
+                            <span class="input-group-text my-bg-searchbar" id="addon-wrapping"><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control my-bg-searchbar"
+                                placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+
+                    <div class="col-auto py-4 d-flex">
+                        <div class="hidden-mini">
+                            <a href="#" class=" text-black "><i class="fa-solid fa-list-ul px-2"></i></a>
+                            <a href="#" class=" text-black"><i class="fa-solid fa-circle-question px-2"></i></a>
+                            <a href="#" class=" text-black"><i class="fa-solid fa-ellipsis-vertical px-2"></i></a>
+                        </div>
+                        <a href="#" class=" my-color-bell "><i class="fa-solid fa-bell px-2"></i></a>
                     </div>
                 </div>
-
-                <div class="col-auto py-4 d-flex">
-                    <div class="hidden-mini">
-                    <a href="#" class=" text-black "><i class="fa-solid fa-list-ul px-2"></i></a>
-                    <a href="#" class=" text-black"><i class="fa-solid fa-circle-question px-2"></i></a>
-                    <a href="#" class=" text-black"><i class="fa-solid fa-ellipsis-vertical px-2"></i></a>
-                    </div>
-                    <a href="#" class=" my-color-bell "><i class="fa-solid fa-bell px-2"></i></a>
-                </div>
-            </div>
-        </nav>
+            </nav>
         </header>
 
 
@@ -81,7 +83,7 @@
                 </div>
             </div>
 
-            <div id="mini-sidebar" class="my-bg-dark-blue text-light d-flex flex-wrap align-content-between" >
+            <div id="mini-sidebar" class="my-bg-dark-blue text-light d-flex flex-wrap align-content-between">
                 <div class="py-4 ">
                     <ul class="list-unstyled hover-my-list">
                         <li class="py-2"><i class="fa-home fa-solid px-3"></i></li>
@@ -94,7 +96,7 @@
                     <span><i class="fa-solid fa-gear px-3"></i></span>
                 </div>
             </div>
-            
+
 
             <!-- ---------------------------------------------------------
                                 main-content
@@ -116,20 +118,20 @@
                             <div class="p-1 d-flex">
                                 <button type="button" class="btn btn-primary active rounded-4 font-size-08 "
                                     data-bs-toggle="button">3 app</button>
-                                 <span><i class="fa-solid fa-angles-right m-2"></i></span>
+                                <span><i class="fa-solid fa-angles-right m-2"></i></span>
 
-                                 <div>
+                                <div>
                                     <button type="button" class="btn btn-primary active rounded-4 hidden-big"
-                                    data-bs-toggle="button">+</button>
-                                 </div>
-                                
-                                 <div class="hidden-mini">
-                                <button type="button" class="btn btn-primary active rounded-4 font-size-08"
-                                    data-bs-toggle="button">Boolean mobile app</button>
-                                <button type="button" class="btn btn-primary active rounded-4 font-size-08"
-                                    data-bs-toggle="button">Boolean web app</button>
-                                <button type="button" class="btn btn-primary active rounded-4 font-size-08"
-                                    data-bs-toggle="button">Boolean blog app</button>
+                                        data-bs-toggle="button">+</button>
+                                </div>
+
+                                <div class="hidden-mini">
+                                    <button type="button" class="btn btn-primary active rounded-4 font-size-08"
+                                        data-bs-toggle="button">Boolean mobile app</button>
+                                    <button type="button" class="btn btn-primary active rounded-4 font-size-08"
+                                        data-bs-toggle="button">Boolean web app</button>
+                                    <button type="button" class="btn btn-primary active rounded-4 font-size-08"
+                                        data-bs-toggle="button">Boolean blog app</button>
                                 </div>
                             </div>
 
@@ -141,7 +143,188 @@
                         </div>
                         <div class="col-lg-auto col-md p-3 mt-2 order-3">
                             <span>Nuovo Studente</span>
-                            <button type="button" class="btn btn-outline-light">+</button>
+                            <!-- <button type="button" class="btn btn-outline-light">+</button> -->
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                +
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade text-black" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog  right-attached">
+                                    <div class="modal-content rounded-0">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Inserisci un nuovo
+                                                studente</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <form>
+                                                    <div class="row d-flex">
+                                                        <!-- colonna sinistra -->
+                                                        <div class="col">
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1"
+                                                                    class="form-label">Nome</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="exampleInputEmail1"
+                                                                    aria-describedby="emailHelp">
+                                                            </div>
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">Email</label>
+                                                            <div class="input-group flex-nowrap mb-3">
+                                                                <span class="input-group-text"
+                                                                    id="addon-wrapping">@</span>
+                                                                <input type="text" class="form-control"
+                                                                    aria-label="Username"
+                                                                    aria-describedby="addon-wrapping">
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputPassword1"
+                                                                    class="form-label">Indirizzo Email</label>
+                                                                <div class="input-group flex-nowrap mb-3">
+                                                                    <span class="input-group-text"
+                                                                        id="addon-wrapping">@</span>
+                                                                    <input type="text" class="form-control"
+                                                                        aria-label="Username"
+                                                                        aria-describedby="addon-wrapping">
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- colonna destra -->
+                                                        <div class="col">
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputSurname1"
+                                                                    class="form-label">Cognome</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="exampleInputEmail1"
+                                                                    aria-describedby="emailHelp">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputPassword1"
+                                                                    class="form-label">Password</label>
+                                                                <input type="password" class="form-control"
+                                                                    id="exampleInputPassword1">
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputPassword1"
+                                                                    class="form-label">Password</label>
+                                                                <input type="password" class="form-control"
+                                                                    id="exampleInputPassword1">
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- indirrizzo -->
+                                                    <div class="row">
+                                                        <div class="col">
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1"
+                                                                    class="form-label">Indirizzo</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="exampleInputEmail1"
+                                                                    aria-describedby="emailHelp">
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- città -->
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1"
+                                                                    class="form-label">Città</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="exampleInputEmail1"
+                                                                    aria-describedby="emailHelp">
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="col">
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1"
+                                                                    class="form-label">Stato</label>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Scegli...</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+
+                                                            </div>
+
+
+
+                                                        </div>
+                                                        <div class="col-3">
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1"
+                                                                    class="form-label">CAP</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="exampleInputEmail1"
+                                                                    aria-describedby="emailHelp">
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- foto -->
+                                                    <div class="row">
+                                                        <div class="col">
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1"
+                                                                    class="form-label">Foto</label>
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+                                                                <label class="form-check-label"
+                                                                    for="exampleCheck1">Seleziona per proseguire</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                                    <button type="reset" class="btn btn-warning">Svuota</button>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </section>
@@ -162,7 +345,7 @@
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th scope="col" class="prima-tabella" >Nome</th>
+                                            <th scope="col" class="prima-tabella">Nome</th>
                                             <th scope="col" class="hidden-mini">Data inizio</th>
                                             <th scope="col" class="text-uppercase hidden-mini">roi</th>
                                             <th scope="col">Stato</th>
@@ -200,7 +383,7 @@
                                                 <button type="button"
                                                     class="btn btn-success rounded-3 p-2 py-0">Done</button>
                                             </td>
-                                            <td  class="d-flex">
+                                            <td class="d-flex">
                                                 <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary py-1"><i
@@ -219,7 +402,7 @@
                                                 <button type="button"
                                                     class="btn btn-warning text-white rounded-3 p-2 py-0">process</button>
                                             </td>
-                                            <td  class="d-flex">
+                                            <td class="d-flex">
                                                 <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary py-1"><i
@@ -238,7 +421,7 @@
                                                 <button type="button"
                                                     class="btn btn-success rounded-3 p-2 py-0">Done</button>
                                             </td>
-                                            <td  class="d-flex">
+                                            <td class="d-flex">
                                                 <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary py-1"><i
@@ -246,7 +429,7 @@
                                             </td>
                                         </tr>
 
-                                        <tr >
+                                        <tr>
                                             <th scope="row">
                                                 <img src="img/class-avatar.jpg" alt="logetto" class="my-icon">
                                                 <span> classe 79</span>
@@ -257,7 +440,7 @@
                                                 <button type="button"
                                                     class="btn btn-danger rounded-3 p-2 py-0">failed</button>
                                             </td>
-                                            <td  class="d-flex">
+                                            <td class="d-flex">
                                                 <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary py-1"><i
@@ -276,7 +459,7 @@
                                                 <button type="button"
                                                     class="btn btn-success rounded-3 p-2 py-0">Done</button>
                                             </td>
-                                            <td  class="d-flex">
+                                            <td class="d-flex">
                                                 <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary py-1"><i
@@ -295,7 +478,7 @@
                                                 <button type="button"
                                                     class="btn btn-danger rounded-3 p-2 py-0">failed</button>
                                             </td>
-                                            <td  class="d-flex">
+                                            <td class="d-flex">
                                                 <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary py-1"><i
@@ -314,7 +497,7 @@
                                                 <button type="button"
                                                     class="btn btn-success rounded-3 p-2 py-0">Done</button>
                                             </td>
-                                            <td  class="d-flex">
+                                            <td class="d-flex">
                                                 <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
                                                         class="fa-solid fa-pencil"></i></button>
                                                 <button type="button" class="btn btn-outline-secondary py-1"><i

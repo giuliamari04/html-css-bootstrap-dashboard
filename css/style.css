@@ -1,4 +1,4 @@
-
+/* general */
 :root{
     --mycolor-bg-gray:rgb(247, 247, 247);
     --mycolor-bg-light-blue:rgb(27, 114, 232);
@@ -8,6 +8,8 @@
 
    
 }
+
+/* utility */
 .debug{
     border: 2px solid red;
 }
@@ -48,6 +50,9 @@
 .font-size-08{
     font-size: 0.8em;
 }
+
+/* container */
+
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -56,7 +61,29 @@ body{
 .wrapper{
     width: 100%;
     height: 100vh;
+
 }
+
+.right-attached {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-right: 0;
+    height: 100vh;
+    margin-top: 0;
+  }
+  
+  .right-attached .modal-dialog {
+    margin: 0 ;
+  }
+  
+  .right-attached .modal-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+
 
 header{
     width: 100%;
