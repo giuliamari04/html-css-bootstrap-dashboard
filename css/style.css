@@ -31,6 +31,23 @@
 .my-color-bell{
     color: orange;
 }
+
+.hidden-mini{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.hidden-big{
+    display: none;
+}
+
+
+.text-right{
+    text-align: end;
+}
+.font-size-08{
+    font-size: 0.8em;
+}
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -44,26 +61,44 @@ body{
 header{
     width: 100%;
     height: 70px;
-    background-color: red;
 }
 
+.logo-mobile{
+    width: 50px;
+}
 
 main{
     width: 100%;
     height: calc(100% - 70px);
-    display: flex;    
+    display: flex;     
+    position: relative;
 }
 
 #sidebar{
-    width: 150px;
-    height: 100%;
+    /* width: 150px;
+    height: 100%; */
     background-image: url(../img/sidebar-bg.png);
+   
+}
+
+#mini-sidebar{
+    width: 70px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 
 #main-content{
-    width: calc(100% - 150px);
+    flex-grow: 1;
+    /* width: calc(100% - 150px); */
     overflow-y: auto; 
 }
+
+.prima-tabella{
+    width: 50%;
+}
+
 .my-icon{
     width: 25px;
     height: 25px;
@@ -74,10 +109,55 @@ main{
 .hover-my-list li:hover{
     background-color: rgba(128, 128, 128, 0.512);
 }
-.dash-left{
 
+@media screen and (max-width:992px) {
+    #sidebar{
+        width: 70px;
+        opacity: 0;
+    }
+
+    #mini-sidebar{
+        opacity:1;
+    }
+
+    
+    .hidden-mini{
+        display: none;
+    }
+
+    .hidden-big{
+        display: block;
+    }
+ 
+    #main-content{
+        width: calc(100% - 70px);
+        overflow-y: auto;   
+    }
+
+    .prima-tabella{
+        width: auto;
+    }
 }
 
-.dash-right{
-    
+@media screen and (max-width: 426px) {
+    .logo{
+        opacity: 0;
+        display: none !important;
+
+    }
+
+    .column-navmain{
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    .logo-mobile{
+        opacity: 1;
+        display: block !important; 
+    }
+
+    .hidden-mini{
+        display: none;
+    }
+   
 }

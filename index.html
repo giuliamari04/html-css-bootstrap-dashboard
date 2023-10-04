@@ -17,62 +17,143 @@
 </head>
 
 <body>
+    <!-- ---------------------------------------------------------
+                                wrapper
+    -------------------------------------------------------------- -->
     <div class="wrapper">
-        <header class=" my-bg-grey sticky-top container-fluid ">
+
+        <!-- ---------------------------------------------------------
+                                header
+    -------------------------------------------------------------- -->
+        <header class=" my-bg-grey sticky-top  d-flex align-items-center ">
+            <nav class="container-fluid">
             <div class="row d-flex justify-content-between">
-                <div class="col-2 py-3">
-                    <img src="img/logo.svg" alt="logo">
+                <div class="col-auto py-3">
+                    <img src="img/logo.svg" alt="logo" class="logo d-block">
+                    <img src="img/mobile-logo.png" alt="logo-mobile" class="logo-mobile d-none">
                 </div>
+
+
                 <div class="col py-3">
                     <div class="input-group flex-nowrap ">
-                        <span class="input-group-text my-bg-searchbar" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" class="form-control my-bg-searchbar" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
+                        <span class="input-group-text my-bg-searchbar" id="addon-wrapping"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control my-bg-searchbar"
+                            placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
                             aria-describedby="addon-wrapping">
                     </div>
                 </div>
 
-                <div class="col-2 py-4">
-                    <a href="#" class="px-3 text-black "><i class="fa-solid fa-list-ul"></i></a>
-                    <a href="#" class="px-3 text-black"><i class="fa-solid fa-circle-question"></i></a>
-                    <a href="#" class="px-3 text-black"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-
-                    <a href="#" class="px-3 my-color-bell "><i class="fa-solid fa-bell"></i></a>
+                <div class="col-auto py-4 d-flex">
+                    <div class="hidden-mini">
+                    <a href="#" class=" text-black "><i class="fa-solid fa-list-ul px-2"></i></a>
+                    <a href="#" class=" text-black"><i class="fa-solid fa-circle-question px-2"></i></a>
+                    <a href="#" class=" text-black"><i class="fa-solid fa-ellipsis-vertical px-2"></i></a>
+                    </div>
+                    <a href="#" class=" my-color-bell "><i class="fa-solid fa-bell px-2"></i></a>
                 </div>
             </div>
+        </nav>
         </header>
 
+
+        <!-- ---------------------------------------------------------
+                                main
+    -------------------------------------------------------------- -->
         <main class="">
 
+            <!-- ---------------------------------------------------------
+                                sidebar
+    -------------------------------------------------------------- -->
+
             <div id="sidebar" class="my-bg-dark-blue text-light d-flex flex-wrap align-content-between">
-                
-                        <div class="py-4 ">
-                            <ul class="list-unstyled hover-my-list">
-                                <li class="py-2"><i class="fa-home fa-solid px-3"></i>Home</li>
-                                <li class="py-2"><i class="fa-solid fa-chart-simple px-3"></i>Stats</li>
-                                <li class="py-2"><i class="fa-solid fa-signal px-3"></i>Signals</li>
-                            </ul>
-                             </div>
-            
-                            <div class="text-white py-2 ">
-                                <span><i class="fa-solid fa-gear px-3"></i> Admin</span>
-                            </div>
-                   
-               
+
+                <div class="py-4 d-flex flex-column">
+                    <ul class="list-unstyled hover-my-list ">
+                        <li class="p-2 d-flex"><i class="fa-home fa-solid px-3"></i>Home</li>
+                        <li class="p-2"><i class="fa-solid fa-chart-simple px-3"></i>Stats</li>
+                        <li class="p-2"><i class="fa-solid fa-signal px-2"></i>Signals</li>
+                    </ul>
+                </div>
+
+                <div class="text-white flex-shrink-1 p-2">
+                    <span><i class="fa-solid fa-gear px-3"></i> Admin</span>
+                </div>
             </div>
 
-            <div id="main-content" >
+            <div id="mini-sidebar" class="my-bg-dark-blue text-light d-flex flex-wrap align-content-between" >
+                <div class="py-4 ">
+                    <ul class="list-unstyled hover-my-list">
+                        <li class="py-2"><i class="fa-home fa-solid px-3"></i></li>
+                        <li class="py-2"><i class="fa-solid fa-chart-simple px-3"></i></li>
+                        <li class="py-2"><i class="fa-solid fa-signal px-3"></i></li>
+                    </ul>
+                </div>
 
-                <section id="main-nav" class="container-fluid my-bg-light-blue text-light">
-                    <div class="row">
-                        <div class="col">1</div>
-                        <div class="col">2</div>
-                        <div class="col">3</div>
+                <div class="text-white py-2 ">
+                    <span><i class="fa-solid fa-gear px-3"></i></span>
+                </div>
+            </div>
+            
+
+            <!-- ---------------------------------------------------------
+                                main-content
+    -------------------------------------------------------------- -->
+
+            <div id="main-content">
+
+                <!-- ---------------------------------------------------------
+                                main nav
+    -------------------------------------------------------------- -->
+                <section id="main-nav" class="container-fluid my-bg-light-blue text-light ">
+                    <div class="row d-flex justify-content-between column-navmain ">
+                        <div class="col-lg-auto col-md-6 p-3">
+                            <div class="d-flex py-1 ">
+                                <h2 class="m-1">Boolean</h2>
+                                <button type="button" class="btn btn-primary active rounded-4 m-2 font-size-08 "
+                                    data-bs-toggle="button">Piano blaze</button>
+                            </div>
+                            <div class="p-1 d-flex">
+                                <button type="button" class="btn btn-primary active rounded-4 font-size-08 "
+                                    data-bs-toggle="button">3 app</button>
+                                 <span><i class="fa-solid fa-angles-right m-2"></i></span>
+
+                                 <div>
+                                    <button type="button" class="btn btn-primary active rounded-4 hidden-big"
+                                    data-bs-toggle="button">+</button>
+                                 </div>
+                                
+                                 <div class="hidden-mini">
+                                <button type="button" class="btn btn-primary active rounded-4 font-size-08"
+                                    data-bs-toggle="button">Boolean mobile app</button>
+                                <button type="button" class="btn btn-primary active rounded-4 font-size-08"
+                                    data-bs-toggle="button">Boolean web app</button>
+                                <button type="button" class="btn btn-primary active rounded-4 font-size-08"
+                                    data-bs-toggle="button">Boolean blog app</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-auto col-md p-3 mt-3">
+                            <span>studenti online negli ultimi 30 minuti</span>
+                            <br>
+                            <h2 class="py-2">125</h2>
+                        </div>
+                        <div class="col-lg-auto col-md p-3 mt-2 order-3">
+                            <span>Nuovo Studente</span>
+                            <button type="button" class="btn btn-outline-light">+</button>
+                        </div>
                     </div>
                 </section>
 
+                <!-- ---------------------------------------------------------
+                                tabelle
+    -------------------------------------------------------------- -->
+
                 <div class="container-fluid p-3">
+
                     <section id="dashboard" class="row">
-                        <div class="col-sm-12 col-lg-8 col-md-6 dash-left ">
+                        <div class="col-sm-12 col-lg-8 col-md-12 dash-left ">
                             <div class="card mb-2">
                                 <div class="card-header">
                                     <h2>Prossime classi</h2>
@@ -81,143 +162,167 @@
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th scope="col" class="w-50">Nome</th>
-                                            <th scope="col">Data inizio</th>
-                                            <th scope="col" class="text-uppercase">roi</th>
+                                            <th scope="col" class="prima-tabella" >Nome</th>
+                                            <th scope="col" class="hidden-mini">Data inizio</th>
+                                            <th scope="col" class="text-uppercase hidden-mini">roi</th>
                                             <th scope="col">Stato</th>
                                             <th scope="col">Azioni</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row" >
-                                                <img src="img/class-avatar.jpg" alt="logetto" class="my-icon">
-                                                <span> classe 75</span>
-                                            </th>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td>
-                                                <button type="button" class="btn btn-success rounded-3 p-2 py-0">Done</button>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i class="fa-solid fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-secondary py-1"><i class="fa-solid fa-trash"></i></button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
                                             <th scope="row">
                                                 <img src="img/class-avatar.jpg" alt="logetto" class="my-icon">
                                                 <span> classe 75</span>
                                             </th>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="hidden-mini">15 Feb 2021</td>
+                                            <td class="hidden-mini">20%</td>
                                             <td>
-                                                <button type="button" class="btn btn-success rounded-3 p-2 py-0">Done</button>
+                                                <button type="button"
+                                                    class="btn btn-success rounded-3 p-2 py-0">Done</button>
                                             </td>
-                                            <td>
-                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i class="fa-solid fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-secondary py-1"><i class="fa-solid fa-trash"></i></button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">
-                                                <img src="img/class-avatar.jpg" alt="logetto" class="my-icon ">
-                                                <span> classe 75</span>
-                                            </th>
-                                            <td >15 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td>
-                                                <button type="button" class="btn btn-success rounded-3 p-2 py-0">Done</button>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i class="fa-solid fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-secondary py-1"><i class="fa-solid fa-trash"></i></button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">
-                                                <img src="img/class-avatar.jpg" alt="logetto" class="my-icon ">
-                                                <span> classe 75</span>
-                                            </th>
-                                            <td >15 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td>
-                                                <button type="button" class="btn btn-success rounded-3 p-2 py-0">Done</button>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i class="fa-solid fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-secondary py-1"><i class="fa-solid fa-trash"></i></button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">
-                                                <img src="img/class-avatar.jpg" alt="logetto" class="my-icon ">
-                                                <span> classe 75</span>
-                                            </th>
-                                            <td >15 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td>
-                                                <button type="button" class="btn btn-success rounded-3 p-2 py-0">Done</button>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i class="fa-solid fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-secondary py-1"><i class="fa-solid fa-trash"></i></button>
+                                            <td class="d-flex">
+                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary py-1"><i
+                                                        class="fa-solid fa-trash"></i></button>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <th scope="row">
                                                 <img src="img/class-avatar.jpg" alt="logetto" class="my-icon">
-                                                <span> classe 75</span>
+                                                <span> classe 76</span>
                                             </th>
-                                            <td >15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="hidden-mini">16 Feb 2021</td>
+                                            <td class="hidden-mini">20%</td>
                                             <td>
-                                                <button type="button" class="btn btn-success rounded-3 p-2 py-0">Done</button>
+                                                <button type="button"
+                                                    class="btn btn-success rounded-3 p-2 py-0">Done</button>
                                             </td>
-                                            <td>
-                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i class="fa-solid fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-secondary py-1"><i class="fa-solid fa-trash"></i></button>
+                                            <td  class="d-flex">
+                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary py-1"><i
+                                                        class="fa-solid fa-trash"></i></button>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <th scope="row">
                                                 <img src="img/class-avatar.jpg" alt="logetto" class="my-icon ">
-                                                <span> classe 75</span>
+                                                <span> classe 77</span>
                                             </th>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="hidden-mini">17 Feb 2021</td>
+                                            <td class="hidden-mini">20%</td>
                                             <td>
-                                                <button type="button" class="btn btn-success rounded-3 p-2 py-0">Done</button>
+                                                <button type="button"
+                                                    class="btn btn-warning text-white rounded-3 p-2 py-0">process</button>
                                             </td>
-                                            <td>
-                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i class="fa-solid fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-secondary py-1"><i class="fa-solid fa-trash"></i></button>
+                                            <td  class="d-flex">
+                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary py-1"><i
+                                                        class="fa-solid fa-trash"></i></button>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <th scope="row">
                                                 <img src="img/class-avatar.jpg" alt="logetto" class="my-icon ">
-                                                <span> classe 75</span>
+                                                <span> classe 78</span>
                                             </th>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="hidden-mini">18 Feb 2021</td>
+                                            <td class="hidden-mini">20%</td>
                                             <td>
-                                                <button type="button" class="btn btn-success rounded-3 p-2 py-0">Done</button>
+                                                <button type="button"
+                                                    class="btn btn-success rounded-3 p-2 py-0">Done</button>
                                             </td>
-                                            <td>
-                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i class="fa-solid fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-secondary py-1"><i class="fa-solid fa-trash"></i></button>
+                                            <td  class="d-flex">
+                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary py-1"><i
+                                                        class="fa-solid fa-trash"></i></button>
                                             </td>
                                         </tr>
 
-                                       
+                                        <tr >
+                                            <th scope="row">
+                                                <img src="img/class-avatar.jpg" alt="logetto" class="my-icon">
+                                                <span> classe 79</span>
+                                            </th>
+                                            <td class="hidden-mini">19 Feb 2021</td>
+                                            <td class="hidden-mini">20%</td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-danger rounded-3 p-2 py-0">failed</button>
+                                            </td>
+                                            <td  class="d-flex">
+                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary py-1"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">
+                                                <img src="img/class-avatar.jpg" alt="logetto" class="my-icon">
+                                                <span> classe 80</span>
+                                            </th>
+                                            <td class="hidden-mini">20 Feb 2021</td>
+                                            <td class="hidden-mini">20%</td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-success rounded-3 p-2 py-0">Done</button>
+                                            </td>
+                                            <td  class="d-flex">
+                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary py-1"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">
+                                                <img src="img/class-avatar.jpg" alt="logetto" class="my-icon ">
+                                                <span> classe 81</span>
+                                            </th>
+                                            <td class="hidden-mini">21 Feb 2021</td>
+                                            <td class="hidden-mini">20%</td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-danger rounded-3 p-2 py-0">failed</button>
+                                            </td>
+                                            <td  class="d-flex">
+                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary py-1"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">
+                                                <img src="img/class-avatar.jpg" alt="logetto" class="my-icon ">
+                                                <span> classe 82</span>
+                                            </th>
+                                            <td class="hidden-mini">22 Feb 2021</td>
+                                            <td class="hidden-mini">20%</td>
+                                            <td>
+                                                <button type="button"
+                                                    class="btn btn-success rounded-3 p-2 py-0">Done</button>
+                                            </td>
+                                            <td  class="d-flex">
+                                                <button type="button" class="btn btn-outline-secondary py-1 px-2"><i
+                                                        class="fa-solid fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-outline-secondary py-1"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+
                                     </tbody>
                                 </table>
                             </div>
@@ -226,51 +331,63 @@
                                     <h2 class="text-uppercase">f.a.q.</h2>
                                 </div>
                                 <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">come aggiungere nuovo studente? <span><i class="fa-solid fa-chevron-down "></i></span></a>
-                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">A third link item  <span><i class="fa-solid fa-chevron-down "></i></span></a>
-                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">A fourth link item  <span><i class="fa-solid fa-chevron-down "></i></span></a>
-                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">A disabled link item  <span><i class="fa-solid fa-chevron-down "></i></span></a>
-                                  </div>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action d-flex justify-content-between">Come
+                                        aggiungere nuovo studente? <span><i
+                                                class="fa-solid fa-chevron-down "></i></span></a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action d-flex justify-content-between">Come
+                                        posso accedere alle informazioni del mio account? <span><i
+                                                class="fa-solid fa-chevron-down "></i></span></a>
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action d-flex justify-content-between">Posso
+                                        usare questa dashboard da mobile? <span><i
+                                                class="fa-solid fa-chevron-down "></i></span></a>
+                                </div>
 
                             </div>
                         </div>
-                        <div class="cool-sm-12 col-lg-4 col-md-6 dash-right ">
+                        <div class="cool-sm-12 col-lg-4 col-md-12 dash-right ">
                             <div class="card mb-2">
-                                 <div class="card-header">
+                                <div class="card-header">
                                     <h2>Todo</h2>
                                 </div>
                                 <ul class="list-group p-3">
                                     <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                      <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="firstCheckbox">
+                                        <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
                                     </li>
                                     <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                      <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="secondCheckbox">
+                                        <label class="form-check-label" for="secondCheckbox">Lezione su Boostrap 5 in
+                                            classe #75</label>
                                     </li>
                                     <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                      <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="thirdCheckbox">
+                                        <label class="form-check-label" for="thirdCheckbox">Controllare username github
+                                            studenti</label>
                                     </li>
-                                  </ul>
+                                </ul>
                             </div>
                             <div class="card p-3">
                                 <div class="card ">
                                     <img src="img/stats.jpeg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Card title</h5>
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text">Lista degli utenti in piattaforma nell'ultimo mese</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">An item</li>
-                                      <li class="list-group-item">A second item</li>
-                                      <li class="list-group-item">A third item</li>
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 1500</li>
                                     </ul>
                                     <div class="card-body">
-                                      <a href="#" class="card-link">Card link</a>
-                                      <a href="#" class="card-link">Another link</a>
+                                        <a href="#" class="card-link">Visualizza report approfondito</a>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </section>
