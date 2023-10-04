@@ -84,6 +84,11 @@ body{
     width: 90%; 
   }
 
+  button.my-color-bell:hover{
+    color: var(--mycolor-bell);
+  }
+
+  .hover-bg-grey
 
 header{
     width: 100%;
@@ -152,9 +157,7 @@ main{
     }
 
     
-    .hidden-mini{
-        display: none;
-    }
+    
 
     .hidden-big{
         display: block;
@@ -170,11 +173,15 @@ main{
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 550px) {
     .logo{
         opacity: 0;
         display: none !important;
 
+    }
+
+    .hidden-mini{
+        display: none;
     }
 
     .column-navmain{
