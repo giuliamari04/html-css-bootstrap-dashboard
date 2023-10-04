@@ -160,9 +160,6 @@ main{
         opacity:1;
     }
 
-    
-    
-
     .hidden-big{
         display: block;
     }
@@ -175,6 +172,10 @@ main{
     .prima-tabella{
         width: auto;
     }
+
+    .custom-modal .modal-dialog {
+        width: 100%; 
+      }
 }
 
 @media screen and (max-width: 550px) {
