@@ -39,7 +39,11 @@
     display: none;
 }
 
-
+.icone-centrate{
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+}
 .text-right{
     text-align: end;
 }
@@ -88,7 +92,7 @@ body{
     color: var(--mycolor-bell);
   }
 
-  .hover-bg-grey
+  
 
 header{
     width: 100%;
@@ -111,8 +115,7 @@ main{
 }
 
 #sidebar{
-    /* width: 150px;
-    height: 100%; */
+    /* width: 150px; */
     background-image: url(../img/sidebar-bg.png);
    
 }
@@ -129,6 +132,7 @@ main{
     flex-grow: 1;
     /* width: calc(100% - 150px); */
     overflow-y: auto; 
+    
 }
 
 .prima-tabella{
@@ -184,6 +188,9 @@ main{
         display: none;
     }
 
+    .icone-centrate{
+        display: none;
+    }
     .column-navmain{
         display: flex;
         flex-direction: column-reverse
