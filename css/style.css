@@ -5,6 +5,7 @@
     --mycolor-bg-dark-blue:rgb(20, 42, 64);
     --mycolor-bg-search-bar: #e5e5e5;
     --mycolor-bg-body: #f8f9fa;
+    --mycolor-bell:orange;
 
    
 }
@@ -34,10 +35,6 @@
     color: orange;
 }
 
-.hidden-mini{
-    display: flex;
-    flex-wrap: nowrap;
-}
 
 .hidden-big{
     display: none;
@@ -98,6 +95,10 @@ header{
     width: 50px;
 }
 
+.btn-group .dropdown-toggle::before {
+    display: none;
+  }
+  
 main{
     width: 100%;
     height: calc(100% - 70px);
